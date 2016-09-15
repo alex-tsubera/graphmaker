@@ -5,17 +5,19 @@
 
 QT_BEGIN_NAMESPACE
 class QTreeView;
+class Vertex;
+class Line;
 QT_END_NAMESPACE
 
 class PropertiesWindow : public QDockWidget
 {
 public:
     PropertiesWindow(QWidget *parent);
-    PropertiesWindow(const Vertex *vertex, QWidget *parent);
-    PropertiesWindow(const Line *line, QWidget *parent);
+    PropertiesWindow(Vertex *vertex, QWidget *parent);
+    PropertiesWindow(Line *line, QWidget *parent);
 
-    void showPropertiesOf(const Vertex *vertex);
-    void showPropertiesOf(const Line *line);
+    void showPropertiesOf(Vertex *vertex);
+    void showPropertiesOf(Line *line);
 
 private:
     QTreeView *tree;

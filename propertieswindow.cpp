@@ -1,5 +1,7 @@
 #include "propertieswindow.h"
 #include <QTreeView>
+#include "vertex.h"
+#include "line.h"
 
 PropertiesWindow::PropertiesWindow(QWidget *parent)
     : QDockWidget("Properties", parent)
@@ -7,7 +9,7 @@ PropertiesWindow::PropertiesWindow(QWidget *parent)
     tree = new QTreeView(this);
 }
 
-PropertiesWindow::PropertiesWindow(const Vertex *vertex, QWidget *parent)
+PropertiesWindow::PropertiesWindow(Vertex *vertex, QWidget *parent)
     : PropertiesWindow(parent)
 {
 

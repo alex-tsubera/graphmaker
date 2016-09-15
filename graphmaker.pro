@@ -26,3 +26,6 @@ HEADERS  += mainwindow.h \
     line.h \
     createnewgraphdialog.h \
     propertieswindow.h
+
+RESOURCES += \
+    resources.qrc

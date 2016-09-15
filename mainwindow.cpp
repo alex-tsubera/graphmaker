@@ -62,6 +62,7 @@ MainWindow::MainWindow()
     //Setting up the main window.
     setCentralWidget(view);
     setWindowTitle(tr("Graph maker"));
+    setWindowIcon(QIcon(":/icons/ic_timeline_black.png"));
     setMinimumHeight(MinimumHeight);
     setMinimumWidth(MinimumWidth);
     setWindowState(Qt::WindowMaximized);
